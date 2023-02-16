@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+.track-box .track-title{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #666464;
+}
+
+ 
+
+.track-box span{
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+
+}
+
+
+@media (max-width:767px) {
+
+  .track-box .track-title{
+    font-size: 20px;
+     
+    border-bottom:none !important;
+}
+ 
+
+ 
+}
