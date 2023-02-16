@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-71dbz@umb#*k5ansk^7qxh#3$8w^hn!p$-erpo5_9ri0k))r=h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["apexstorage.net", "www.apexstorage.net"]
 
 
 # Application definition
@@ -122,6 +122,7 @@ USE_TZ = True
 
 STATIC_URL = "assets/"
 STATICFILES_DIRS = (os.path.join(BASE_DIR, "assets"),)
+STATIC_ROOT = "/home/apexxpeu/public_html/assets/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
