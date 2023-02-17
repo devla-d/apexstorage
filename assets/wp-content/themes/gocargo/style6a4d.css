@@ -3423,9 +3423,10 @@ footer a:hover {
 	height: 80px;
 }
 #logo img.logo-1, #logo img.logo-2 {
-	height: auto;
-	max-width: 100%;
-	width: 100%;
+	    height: auto;
+    max-width: 100%;
+    width: 120px;
+    margin-top: -5px;
 }
 
 /*------------------------------ 
