@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-71dbz@umb#*k5ansk^7qxh#3$8w^hn!p$-erpo5_9ri0k))r=h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["apexstorage.net", "www.apexstorage.net"]
+ALLOWED_HOSTS = ["apexstorage.net", "www.apexstorage.net", "localhost"]
 
 
 # Application definition

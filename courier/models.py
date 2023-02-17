@@ -31,6 +31,7 @@ class Package(models.Model):
     departure_date = models.CharField(max_length=400, blank=True, null=True)
     expected_delivery_date = models.CharField(max_length=400, blank=True, null=True)
     pick_up_date = models.CharField(max_length=400, blank=True, null=True)
+    current_location = models.CharField(max_length=400, blank=True, null=True)
 
     def __str__(self):
         return f"{self.track_id}"

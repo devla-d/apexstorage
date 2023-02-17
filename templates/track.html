@@ -4652,20 +4652,17 @@ We use it here to ensure columns blocks display well across themes.
                 <p><span>{{package.origin}}</span><br /></p>
               </div>
             </div>
+
             <div class="col-md-3">
               <div class="track-box">
-                <h4 class="track-title">ID:</h4>
-                <p><span>{{package.track_id}}</span><br /></p>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="track-box">
-                <h4 class="track-title">Status:</h4>
+                <h4 class="track-title">Current Location:</h4>
                 <p>
-                  <span class="text-warning">{{package.status}}</span><br />
+                  <span class="text-success">{{package.current_location}}</span
+                  ><br />
                 </p>
               </div>
             </div>
+
             <div class="col-md-3">
               <div class="track-box">
                 <h4 class="track-title">Destination:</h4>
@@ -4730,6 +4727,15 @@ We use it here to ensure columns blocks display well across themes.
               <div class="track-box">
                 <h4 class="track-title">Pick-up Date:</h4>
                 <p><span>{{package.pick_up_date}}</span><br /></p>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="track-box">
+                <h4 class="track-title">Status:</h4>
+                <p>
+                  <span class="text-warning">{{package.status}}</span><br />
+                </p>
               </div>
             </div>
           </div>

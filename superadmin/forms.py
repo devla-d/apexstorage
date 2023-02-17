@@ -239,6 +239,30 @@ class NewPackageForm(forms.ModelForm):
         required=True,
     )
 
+    pick_up_date = forms.CharField(
+        widget=forms.TextInput(
+            attrs={
+                "type": "text",
+                "class": "form-control",
+                "placeholder": "Pick up Date",
+            }
+        ),
+        label="Pick up Date",
+        required=True,
+    )
+
+    current_location = forms.CharField(
+        widget=forms.TextInput(
+            attrs={
+                "type": "text",
+                "class": "form-control",
+                "placeholder": "Current Location",
+            }
+        ),
+        label="Current Location",
+        required=True,
+    )
+
     class Meta:
         model = Package
         fields = [
@@ -260,6 +284,8 @@ class NewPackageForm(forms.ModelForm):
             "payment_mode",
             "departure_date",
             "expected_delivery_date",
+            "pick_up_date",
+            "current_location",
             "status",
             "track_id",
         ]
