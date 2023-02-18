@@ -12,6 +12,7 @@ DV = "DELIVERD"
 
 STATUS = (
     ("PENDING", "PENDING"),
+    ("Out For Delivery", "Out For Delivery"),
     ("DELIVERD", "DELIVERD"),
 )
 
