@@ -4288,6 +4288,22 @@ We use it here to ensure columns blocks display well across themes.
         }
       </style></noscript
     >
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/63f2f4b131ebfa0fe7ee2d0e/1gpmgnm7k";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
   </head>
   <body
     class="page-template page-template-page-templates page-template-template-fullwidth page-template-page-templatestemplate-fullwidth-php page page-id-8 preview1 wpb-js-composer js-comp-ver-6.10.0 vc_responsive"
@@ -4617,7 +4633,7 @@ We use it here to ensure columns blocks display well across themes.
         </section>
       </section>
       {% if package %}
-      <section>
+      <section id="mobT">
         <div class="container">
           <!-- <h1 class="text-center">TrACK ID : 1HWJ2820</h1> -->
 
@@ -4736,6 +4752,181 @@ We use it here to ensure columns blocks display well across themes.
                 <p>
                   <span class="text-warning">{{package.status}}</span><br />
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mobm">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <div class="">
+                    <h3>Shippers Information</h3>
+                    <table class="table table-striped-shipper">
+                      <tbody>
+                        <tr>
+                          <td>Shippers Name</td>
+                          <td class="text-right">
+                            <span id="with-user"> {{package.sname}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Shippers country</td>
+                          <td class="text-right text-danger">
+                            <span id="with-amount">{{package.scountry}}</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Shippers Phone</td>
+                          <td class="text-right text-warning">
+                            <span id="with-method">{{package.sphone}}</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="">
+                    <h3>Receivers Information</h3>
+                    <table class="table table-striped-shipper">
+                      <tbody>
+                        <tr>
+                          <td>Receivers Name</td>
+                          <td class="text-right text-warning">
+                            <span id="with-method">{{package.rname}}</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Receivers Address</td>
+                          <td class="text-right text-warning">
+                            <span id="with-method">{{package.raddress}}</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Receivers Phone</td>
+                          <td class="text-right text-warning">
+                            <span id="with-method">{{package.rphone}}</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Receivers Postal</td>
+                          <td class="text-right">
+                            <span id="with-date">{{package.rpostal}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Receivers Email</td>
+                          <td class="text-right">
+                            <span>{{package.remail}}</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="">
+                    <h3>Shipment Information</h3>
+                    <table class="table table-striped-shipper">
+                      <tbody>
+                        <tr>
+                          <td>Origin</td>
+                          <td class="text-right">
+                            <span>{{package.origin}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Track Id</td>
+                          <td class="text-right">
+                            <span>{{package.track_id}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Destination</td>
+                          <td class="text-right">
+                            <span>{{package.destination}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>weight</td>
+                          <td class="text-right">
+                            <span>{{package.weight}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Shipment Mode</td>
+                          <td class="text-right">
+                            <span>{{package.shipment_mode}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Carrier Ref No</td>
+                          <td class="text-right">
+                            <span>{{package.carrier_ref_no}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Product</td>
+                          <td class="text-right">
+                            <span>{{package.product}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Quantity</td>
+                          <td class="text-right">
+                            <span>{{package.quantity}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Payment Mode</td>
+                          <td class="text-right">
+                            <span>{{package.payment_mode}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Departure Date</td>
+                          <td class="text-right">
+                            <span>{{package.departure_date}}</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Delivery Date</td>
+                          <td class="text-right">
+                            <span>{{package.expected_delivery_date}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Pickup Date</td>
+                          <td class="text-right">
+                            <span>{{package.pick_up_date}}</span>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>Status</td>
+                          <td
+                            class="text-right {% if package.status == 'PENDING' %} text-warning {% else %} text-success {% endif %}"
+                          >
+                            <span id="with-status">{{package.status}}</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
