@@ -131,3 +131,15 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+
+# EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "apexstorage.net"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "support@apexstorage.net"
+EMAIL_HOST_PASSWORD = "@apexstorage.net "
+DEFAULT_FROM_EMAIL = "ApexStorage <support@apexstorage.net>"
