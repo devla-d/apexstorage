@@ -64,11 +64,11 @@ def send_message(request):
         title = request.POST.get("title")
         rname = request.POST.get("rname")
         email = request.POST.get("remail")
-        message = request.POST.get("rmessage")
+        rmessage = request.POST.get("rmessage")
 
         context = {
             "name": rname,
-            "body": messages,
+            "body": rmessage,
         }
         message = get_template("superadmin/mail_temp.html").render(context)
         mail = EmailMessage(
