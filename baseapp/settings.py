@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-71dbz@umb#*k5ansk^7qxh#3$8w^hn!p$-erpo5_9ri0k))r=h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["apexstorage.net", "www.apexstorage.net", "localhost"]
+ALLOWED_HOSTS = ["apexstorage.xyz", "www.apexstorage.xyz", "localhost"]
 
 
 # Application definition
@@ -137,9 +137,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "apexstorage.net"
+EMAIL_HOST = "apexstorage.xyz"
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = "support@apexstorage.net"
-EMAIL_HOST_PASSWORD = "@apexstorage.net"
-DEFAULT_FROM_EMAIL = "ApexStorage <support@apexstorage.net>"
+EMAIL_HOST_USER = "support@apexstorage.xyz"
+EMAIL_HOST_PASSWORD = "@apexstorage.xyz"
+DEFAULT_FROM_EMAIL = "ApexStorage <support@apexstorage.xyz>"
